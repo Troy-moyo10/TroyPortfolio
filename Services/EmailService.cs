@@ -48,22 +48,41 @@ namespace TroyPortfolio.Services
                     <p>{model.Message}</p>"
             };
 
-            using var smtp = new SmtpClient();
+            using var smtp = new SmtpClient
+            {
+                Timeout = 15000 // 15 seconds
+            };
 
 
+
+            Console.WriteLine("Connecting to SMTP...");
 
             await smtp.ConnectAsync(
                 _settings.SmtpServer,
                 _settings.Port,
                 SecureSocketOptions.StartTls);
 
+            Console.WriteLine("Connected to SMTP.");
+
+            Console.WriteLine("Authenticating...");
+
             await smtp.AuthenticateAsync(
                 _settings.Username,
                 _settings.Password);
 
+            Console.WriteLine("Authenticated.");
+
+            Console.WriteLine("Sending email...");
+
             await smtp.SendAsync(email);
 
+            Console.WriteLine("Email sent successfully.");
+
             await smtp.DisconnectAsync(true);
+
+            Console.WriteLine("Disconnected.");
+
+            
         }
     }
 }
