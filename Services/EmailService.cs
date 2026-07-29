@@ -50,6 +50,8 @@ namespace TroyPortfolio.Services
 
             using var smtp = new SmtpClient();
 
+
+
             await smtp.ConnectAsync(
                 _settings.SmtpServer,
                 _settings.Port,
