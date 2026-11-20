@@ -1,4 +1,4 @@
-﻿
+
 @{
     ViewData["Title"] = "About";
 }
@@ -7,16 +7,12 @@
 
     <div class="container">
 
-        <!-- Page Title -->
-
-        <div class="text-center mb-5">
-
+        <!-- Page Title (compact) -->
+        <div class="text-center about-page-header">
             <h1 class="page-title">About Me</h1>
-
-            <p class="page-subtitle">
-                Learn more about who I am, my journey, and where I'm heading.
+            <p class="page-subtitle-sm">
+                My background and current focus.
             </p>
-
         </div>
 
         <!-- About Hero -->
@@ -26,149 +22,132 @@
             <div class="col-lg-4 d-flex justify-content-start">
 
                 <div class="about-image-card">
-
                     <img src="~/images/troy2.png.jpeg"
                          asp-append-version="true"
-                         alt="Troy">
-
+                         alt="Troy Moyo">
                 </div>
 
             </div>
 
-            <!-- RIGHT -->
             <!-- RIGHT -->
             <div class="col-lg-8">
 
                 <div class="about-content">
 
                     <h2 class="about-heading">
-                        Hi, I'm Troy Moyo👋
+                        Hi, I'm Troy Moyo
                     </h2>
 
                     <h5 class="about-role">
-                        Software Developer • IT Graduate • AI Enthusiast
+                        Software Developer &bull; IT Graduate
                     </h5>
 
                     <p>
-                        I am an Information Technology graduate with a strong passion
-                        for software development, artificial intelligence, and
-                        solving real-world problems through technology.
+                        I'm an Information Technology graduate focused on building
+                        practical software — from web applications to data-driven
+                        systems and API integrations.
                     </p>
 
                     <p>
-                        I enjoy building scalable web applications using ASP.NET Core,
-                        C#, SQL Server and Python.
+                        My main stack is ASP.NET Core, C#, SQL Server and Python.
+                        I've also worked with machine learning tools and I'm
+                        currently building out my experience in cloud technologies.
                     </p>
 
                     <p>
-                        I am currently focused on expanding my expertise in software
-                        engineering, machine learning and cloud technologies.
+                        I'm actively seeking opportunities where I can contribute
+                        to real products and keep developing as an engineer.
                     </p>
 
                 </div>
 
+            </div>
 
-       </div>
-
+        </div>
 
     </div>
- 
-</div>
 
 </section>
 
-<!-- MY JOURNEY -->
+<!-- DEVELOPMENT JOURNEY -->
 
 <section class="journey-section py-5">
 
     <div class="container">
 
-        <div class="text-center mb-5">
-
-            <h2 class="section-title">My Journey</h2>
-
+        <div class="text-center mb-4">
+            <h2 class="section-title">Development Journey</h2>
             <p class="section-subtitle">
-                From student to software developer.
+                From where I started to where I am now.
             </p>
-
         </div>
 
-        <div class="timeline-horizontal">
+        <!-- Vertical timeline — present at top, past at bottom -->
+        <div class="timeline-vertical" id="devTimeline">
 
-            <div class="timeline-step">
-
-                <div class="timeline-circle"></div>
-
-                <span class="timeline-year">2023</span>
-
-                <div class="timeline-card">
-
-                    <h5>Started IT Journey</h5>
-
-                    <p>
-                        Began studying Information Technology and discovered my
-                        passion for software development.
-                    </p>
-
+            <!-- 1. Current focus (most prominent) -->
+            <div class="tv-item tv-item--active" data-timeline>
+                <div class="tv-marker">
+                    <div class="tv-dot tv-dot--active"></div>
                 </div>
-
+                <div class="tv-content">
+                    <span class="tv-label tv-label--current">Current focus</span>
+                    <h4 class="tv-title">Building and improving real-world software solutions</h4>
+                    <p class="tv-desc">
+                        Developing practical applications while strengthening my skills in
+                        software engineering, full-stack development, system integrations,
+                        cloud technologies, and intelligent systems. Focused on turning
+                        technical knowledge into functional solutions through hands-on
+                        projects and continuous learning.
+                    </p>
+                </div>
             </div>
 
-            <div class="timeline-step">
-
-                <div class="timeline-circle"></div>
-
-                <span class="timeline-year">2024</span>
-
-                <div class="timeline-card">
-
-                    <h5>Expanded Skills</h5>
-
-                    <p>
-                        Learned C#, ASP.NET Core, SQL Server, Python,Data Analysis,
-                        Bootstrap and JavaScript.
-                    </p>
-
+            <!-- 2. Internship -->
+            <div class="tv-item" data-timeline>
+                <div class="tv-marker">
+                    <div class="tv-dot"></div>
                 </div>
-
+                <div class="tv-content">
+                    <span class="tv-label">2026</span>
+                    <h4 class="tv-title">Software Developer Intern</h4>
+                    <p class="tv-desc">
+                        Started building enterprise software and real-world applications,
+                        working across the full stack and gaining hands-on experience
+                        with production systems.
+                    </p>
+                </div>
             </div>
 
-            <div class="timeline-step">
-
-                <div class="timeline-circle"></div>
-
-                <span class="timeline-year">2026</span>
-
-                <div class="timeline-card">
-
-                    <h5>Software Developer Intern</h5>
-
-                    <p>
-                        Started building enterprise software and real-world
-                        applications.
-                    </p>
-
+            <!-- 3. Skills expansion -->
+            <div class="tv-item" data-timeline>
+                <div class="tv-marker">
+                    <div class="tv-dot"></div>
                 </div>
-
+                <div class="tv-content">
+                    <span class="tv-label">2024</span>
+                    <h4 class="tv-title">Expanded Technical Skills</h4>
+                    <p class="tv-desc">
+                        Learned C#, ASP.NET Core, SQL Server, Python, data analysis,
+                        Bootstrap and JavaScript. Built several personal and academic
+                        projects to apply these skills.
+                    </p>
+                </div>
             </div>
 
-            <div class="timeline-step">
-
-                <div class="timeline-circle"></div>
-
-                <span class="timeline-year">Future</span>
-
-                <div class="timeline-card">
-
-                    <h5>Software Engineer</h5>
-
-                    <p>
-                        Building AI-powered systems and cloud applications that
-                        solve real problems.
-                    </p>
-
+            <!-- 4. Origin -->
+            <div class="tv-item" data-timeline>
+                <div class="tv-marker">
+                    <div class="tv-dot"></div>
                 </div>
-
+                <div class="tv-content">
+                    <span class="tv-label">2023</span>
+                    <h4 class="tv-title">Started IT Studies</h4>
+                    <p class="tv-desc">
+                        Began studying Information Technology and found that software
+                        development was the direction I wanted to pursue.
+                    </p>
+                </div>
             </div>
 
         </div>
@@ -184,73 +163,48 @@
     <div class="container">
 
         <div class="text-center mb-5">
-
             <h2 class="section-title">What Drives Me</h2>
-
             <p class="section-subtitle">
                 The values that shape the way I work.
             </p>
-
         </div>
 
         <div class="row g-4">
 
             <!-- Card 1 -->
-
             <div class="col-lg-4">
-
                 <div class="value-card">
-
                     <i class="bi bi-lightbulb"></i>
-
-                    <h4>Innovation</h4>
-
+                    <h4>Problem Solving</h4>
                     <p>
-                        I enjoy finding creative solutions to complex
-                        challenges and building technology that makes
-                        a real impact.
+                        I focus on understanding a problem clearly before writing code.
+                        Good solutions come from understanding the actual need.
                     </p>
-
                 </div>
-
             </div>
 
             <!-- Card 2 -->
-
             <div class="col-lg-4">
-
                 <div class="value-card">
-
                     <i class="bi bi-code-slash"></i>
-
                     <h4>Clean Code</h4>
-
                     <p>
-                        Writing maintainable, scalable and efficient
-                        software is at the core of everything I build.
+                        Writing maintainable, readable code matters as much as making
+                        something work. I try to build things that others can follow.
                     </p>
-
                 </div>
-
             </div>
 
             <!-- Card 3 -->
-
             <div class="col-lg-4">
-
                 <div class="value-card">
-
                     <i class="bi bi-graph-up-arrow"></i>
-
-                    <h4>Continuous Growth</h4>
-
+                    <h4>Continuous Learning</h4>
                     <p>
-                        Every project is an opportunity to learn,
-                        improve and become a better developer.
+                        Every project teaches me something. I actively look for areas
+                        where I can improve and pick up new tools when they're needed.
                     </p>
-
                 </div>
-
             </div>
 
         </div>
@@ -258,3 +212,33 @@
     </div>
 
 </section>
+
+@section Scripts {
+<script>
+(function () {
+    // Respect prefers-reduced-motion
+    var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    var items = document.querySelectorAll('[data-timeline]');
+    if (!items.length) return;
+
+    if (prefersReduced) {
+        items.forEach(function (el) { el.classList.add('tv-visible'); });
+        return;
+    }
+
+    var seen = new Set();
+
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting && !seen.has(entry.target)) {
+                seen.add(entry.target);
+                entry.target.classList.add('tv-visible');
+            }
+        });
+    }, { threshold: 0.25 });
+
+    items.forEach(function (el) { observer.observe(el); });
+})();
+</script>
+}

@@ -1,143 +1,197 @@
-﻿@{
+@{
     ViewData["Title"] = "Projects";
 }
 
 <section class="projects-page py-5">
-
     <div class="container">
 
         <!-- Heading -->
-
         <div class="text-center mb-5">
-
-            <h1 class="page-title">My Projects</h1>
-
+            <span class="section-label">Work &amp; Experience</span>
+            <h1 class="page-title mt-2">Projects</h1>
             <p class="page-subtitle">
-                A collection of applications that showcase my software development journey.
+                A selection of enterprise platforms, full-stack systems, and web applications I've developed.
             </p>
-
         </div>
 
-        <!-- Featured -->
+        <!-- Projects Grid: Individual Cards in a Responsive Grid -->
+        <div class="projects-grid">
 
-        <h2 class="section-title mb-4">
-            ⭐ Featured Project
-        </h2>
-
-        <div class="featured-project">
-
-            <div class="row align-items-center">
-
-                <div class="col-lg-8">
-
-                    <span class="project-status">
-                        ● Currently Developing
-                    </span>
-
-                    <h2>
-                        Security Intelligence System
-                    </h2>
-
-                    <p>
-
-                        An intelligent security platform designed to help security
-                        companies prevent crime before it happens through live
-                        incident management, predictive analytics, GPS tracking,
-                        drone deployment and AI-assisted decision making.
-
-                    </p>
-
-                    <div class="tech-stack">
-
-                        <span>ASP.NET Core</span>
-                        <span>C#</span>
-                        <span>SQL Server</span>
-                        <span>Python</span>
-                        <span>Machine Learning</span>
-                        <span>REST API</span>
-
-                    </div>
-
+            <!-- 1. Vision Guard -->
+            <div class="project-card">
+                <div class="project-card-icon">
+                    <i data-lucide="shield" class="lucide-icon"></i>
                 </div>
-
-                <div class="col-lg-4 text-center">
-
-                    <i class="bi bi-shield-lock project-icon"></i>
-
+                <span class="project-status">● In Progress</span>
+                <h3>Vision Guard</h3>
+                <p>
+                    Autonomous drone surveillance and incident management platform integrating real-time telemetry, live video streaming, and mission dispatch for security teams.
+                </p>
+                <div class="tech-stack">
+                    <span>Django</span>
+                    <span>Android Java</span>
+                    <span>DJI SDK</span>
+                    <span>RTMP</span>
+                    <span>MediaMTX</span>
                 </div>
-
+                <div class="project-actions">
+                    <a asp-controller="Home" asp-action="ProjectDetail" asp-route-id="vision-guard" class="btn-project-detail">
+                        Explore Project
+                    </a>
+                </div>
             </div>
 
-        </div>
-
-        <!-- Other Projects -->
-
-        <h2 class="section-title mt-5 mb-4">
-            Other Projects
-        </h2>
-
-        <div class="row g-4">
-
-            <!-- Portfolio -->
-
-            <div class="col-lg-6">
-
-                <div class="project-card">
-
-                    <span class="project-status completed">
-
-                        ✔ Completed
-
-                    </span>
-
-                    <h3>Portfolio Website</h3>
-
-                    <p>
-
-                        Designed and developed a responsive ASP.NET Core MVC
-                        portfolio website showcasing my skills, projects and
-                        experience using modern UI principles.
-
-                    </p>
-
-                    <div class="tech-stack">
-
-                        <span>ASP.NET MVC</span>
-                        <span>Bootstrap</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-
-                    </div>
-
+            <!-- 2. DailyOpsTrack -->
+            <div class="project-card">
+                <div class="project-card-icon">
+                    <i data-lucide="clipboard-list" class="lucide-icon"></i>
                 </div>
-
+                <span class="project-status completed">✔ Completed</span>
+                <h3>DailyOpsTrack</h3>
+                <p>
+                    Operational tracking and reporting system designed for logging daily activities, staff workflows, and accountability metrics across distributed teams.
+                </p>
+                <div class="tech-stack">
+                    <span>ASP.NET Core</span>
+                    <span>C#</span>
+                    <span>SQL Server</span>
+                    <span>Bootstrap</span>
+                </div>
+                <div class="project-actions">
+                    <a asp-controller="Home" asp-action="ProjectDetail" asp-route-id="dailyopstrack" class="btn-project-detail">
+                        Explore Project
+                    </a>
+                </div>
             </div>
 
-            <!-- Coming Soon -->
-
-            <div class="col-lg-6">
-
-                <div class="project-card future-card">
-
-                    <i class="bi bi-rocket-takeoff display-4"></i>
-
-                    <h3>More Projects Coming</h3>
-
-                    <p>
-
-                        I'm continuously building software while expanding
-                        my expertise in AI, cloud computing and enterprise
-                        application development.
-
-                    </p>
-
+            <!-- 3. PAICTA ArtisanConnect -->
+            <div class="project-card">
+                <div class="project-card-icon">
+                    <i data-lucide="users" class="lucide-icon"></i>
                 </div>
+                <span class="project-status completed">✔ Completed</span>
+                <h3>PAICTA ArtisanConnect</h3>
+                <p>
+                    Community service discovery platform linking certified artisans and tradespeople with local clients seeking verified and skilled trade professionals.
+                </p>
+                <div class="tech-stack">
+                    <span>ASP.NET Core MVC</span>
+                    <span>C#</span>
+                    <span>Entity Framework</span>
+                    <span>SQL</span>
+                </div>
+                <div class="project-actions">
+                    <a asp-controller="Home" asp-action="ProjectDetail" asp-route-id="paicta-artisanconnect" class="btn-project-detail">
+                        Explore Project
+                    </a>
+                </div>
+            </div>
 
+            <!-- 4. Thrive Development Group -->
+            <div class="project-card">
+                <div class="project-card-icon">
+                    <i data-lucide="building" class="lucide-icon"></i>
+                </div>
+                <span class="project-status completed">✔ Completed</span>
+                <h3>Thrive Development Group</h3>
+                <p>
+                    Corporate web portal built for a professional development organisation, presenting consulting services, engagement programs, and contact workflows.
+                </p>
+                <div class="tech-stack">
+                    <span>ASP.NET Core MVC</span>
+                    <span>Bootstrap</span>
+                    <span>JavaScript</span>
+                    <span>CSS</span>
+                </div>
+                <div class="project-actions">
+                    <a asp-controller="Home" asp-action="ProjectDetail" asp-route-id="thrive-development-group" class="btn-project-detail">
+                        Explore Project
+                    </a>
+                </div>
+            </div>
+
+            <!-- 5. Imifuno -->
+            <div class="project-card">
+                <div class="project-card-icon">
+                    <i data-lucide="sprout" class="lucide-icon"></i>
+                </div>
+                <span class="project-status completed">✔ Completed</span>
+                <h3>Imifuno</h3>
+                <p>
+                    Agricultural marketplace application facilitating supply chain connections between local vegetable farmers and commercial retail buyers.
+                </p>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>SQL</span>
+                    <span>Bootstrap</span>
+                </div>
+                <div class="project-actions">
+                    <a asp-controller="Home" asp-action="ProjectDetail" asp-route-id="imifuno" class="btn-project-detail">
+                        Explore Project
+                    </a>
+                </div>
+            </div>
+
+            <!-- 6. Troy Portfolio -->
+            <div class="project-card">
+                <div class="project-card-icon">
+                    <i data-lucide="globe" class="lucide-icon"></i>
+                </div>
+                <span class="project-status completed">✔ Completed</span>
+                <h3>Troy Portfolio</h3>
+                <p>
+                    Modern, clean professional portfolio showcasing technical background, development journey, categorized skills, and verified projects.
+                </p>
+                <div class="tech-stack">
+                    <span>ASP.NET Core MVC</span>
+                    <span>C#</span>
+                    <span>Bootstrap</span>
+                    <span>JavaScript</span>
+                </div>
+                <div class="project-actions">
+                    <a asp-controller="Home" asp-action="ProjectDetail" asp-route-id="portfolio-website" class="btn-project-detail">
+                        Explore Project
+                    </a>
+                    <a href="https://github.com/Troy-moyo10/TroyPortfolio" target="_blank" rel="noopener noreferrer" class="btn-project-github">
+                        <i data-lucide="github" class="lucide-icon-sm"></i> GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- 7. Hospital Management System -->
+            <div class="project-card">
+                <div class="project-card-icon">
+                    <i data-lucide="activity" class="lucide-icon"></i>
+                </div>
+                <span class="project-status completed">✔ Completed</span>
+                <h3>Hospital Management System</h3>
+                <p>
+                    Healthcare administration system handling patient admissions, doctor appointment scheduling, medical department records, and billing operations.
+                </p>
+                <div class="tech-stack">
+                    <span>C#</span>
+                    <span>.NET</span>
+                    <span>SQL Server</span>
+                    <span>Windows Forms / MVC</span>
+                </div>
+                <div class="project-actions">
+                    <a asp-controller="Home" asp-action="ProjectDetail" asp-route-id="hospital-management-system" class="btn-project-detail">
+                        Explore Project
+                    </a>
+                </div>
             </div>
 
         </div>
 
     </div>
-
 </section>
+
+@section Scripts {
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
+</script>
+}

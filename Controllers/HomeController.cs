@@ -31,6 +31,12 @@ namespace TroyPortfolio.Controllers
             return View();
         }
 
+        public IActionResult ProjectDetail(string id)
+        {
+            ViewBag.ProjectId = id;
+            return View();
+        }
+
         public IActionResult Contact()
         {
             return View();
