@@ -14,9 +14,8 @@ WORKDIR /app
 
 COPY --from=build /app/publish .
 
-ENV ASPNETCORE_URLS=http://+:10000
-ENV DOTNET_USE_POLLING_FILE_WATCHER=1
+ENV ASPNETCORE_ENVIRONMENT=Production
 
-EXPOSE 10000
+EXPOSE 80
 
-ENTRYPOINT ["dotnet", "TroyPortfolio.dll"]
+ENTRYPOINT ["sh", "-c", "dotnet TroyPortfolio.dll --urls http://0.0.0.0:${PORT:-80}"]

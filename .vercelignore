@@ -1,0 +1,10 @@
+.git
+.git/**
+.vercel
+.vercel/**
+.vs
+.env*
+**/bin/
+**/obj/
+**/node_modules/
+*.user

@@ -10,7 +10,7 @@
             <div class="col-lg-7">
 
                 <p class="hero-intro">
-                    <i class="bi bi-hand-wave"></i> Hello, I'm
+                    Hello, I'm
                 </p>
 
                 <h1 class="hero-title">
@@ -19,7 +19,7 @@
 
                 <h2 class="hero-subtitle">
                     Software Developer<br>
-                    <span style="font-size:.85em; color:var(--clr-text-muted);">Information Technology Graduate</span>
+                    <span class="hero-subtitle-detail">Information Technology Graduate</span>
                 </h2>
 
                 <p class="hero-description">
@@ -30,11 +30,16 @@
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="~/Files/Troy_Moyo_CV.pdf"
+                    <a href="~/Files/Troy_Moyo_Updated_CV.pdf"
                        download
                        class="btn btn-primary-solid">
-                        <i class="bi bi-download"></i>
                         Download CV
+                    </a>
+                    <a href="~/Files/Troy_Moyo_Updated_CV.pdf"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-outline">
+                        Preview CV
                     </a>
                     <a asp-controller="Home"
                        asp-action="Projects"
@@ -56,18 +61,15 @@
 
                 <div class="hero-stats">
                     <div class="stat-card">
-                        <i class="bi bi-folder2-open"></i>
-                        <h3>7+</h3>
+                        <h3 class="count-up" data-count="7">7</h3>
                         <p>Projects</p>
                     </div>
                     <div class="stat-card">
-                        <i class="bi bi-code-slash"></i>
-                        <h3>15+</h3>
+                        <h3 class="count-up" data-count="15">15</h3>
                         <p>Technologies</p>
                     </div>
                     <div class="stat-card">
-                        <i class="bi bi-mortarboard"></i>
-                        <h3>2026</h3>
+                        <h3 class="count-up" data-count="2026">2026</h3>
                         <p>Graduate</p>
                     </div>
                 </div>
@@ -81,7 +83,7 @@
                     <div class="profile-info">
                         <h4>Troy Moyo</h4>
                         <p>Software Developer</p>
-                        <small><i class="bi bi-geo-alt me-1"></i>East London, South Africa</small>
+                        <small><i data-lucide="map-pin" class="lucide-icon-sm" aria-hidden="true"></i>East London, South Africa</small>
                     </div>
                 </div>
             </div>
