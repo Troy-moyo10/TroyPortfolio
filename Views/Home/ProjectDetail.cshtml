@@ -20,7 +20,7 @@
         <!-- Back link -->
         <div class="mb-4">
             <a asp-controller="Home" asp-action="Projects" class="btn-back">
-                <i data-lucide="arrow-left" class="lucide-icon-sm"></i> Back to Projects
+                <i data-lucide="arrow-left" class="lucide-icon-sm" aria-hidden="true"></i> Back to Projects
             </a>
         </div>
 
@@ -43,28 +43,28 @@
             <div class="row g-5">
                 <div class="col-lg-8">
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="info" class="lucide-icon-sm"></i> Project Overview</h2>
+                        <h2 class="detail-section-title">Project Overview</h2>
                         <p>
                             Vision Guard is an autonomous drone surveillance and incident management platform designed to support security operations. It enables live video streaming, automated patrol coordination, and telemetry tracking from field drones directly into an operations dashboard.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="alert-circle" class="lucide-icon-sm"></i> Problem Addressed</h2>
+                        <h2 class="detail-section-title">Problem Addressed</h2>
                         <p>
                             Traditional ground patrols face blind spots, delayed emergency response times, and limited visibility in large facilities or perimeter perimeters. Vision Guard addresses this by providing aerial monitoring and low-latency video feeds to decision-makers.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="cpu" class="lucide-icon-sm"></i> How the System Works</h2>
+                        <h2 class="detail-section-title">How the System Works</h2>
                         <p>
                             An Android application built with the DJI Mobile SDK interfaces with the drone hardware, pulling live video and flight telemetry. The stream is pushed via RTMP to a MediaMTX media server, transcoded to HLS, and broadcast to an operator dashboard built on Django. Firebase and REST services coordinate real-time mission commands and event alerts.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="check-circle" class="lucide-icon-sm"></i> Main Features</h2>
+                        <h2 class="detail-section-title">Main Features</h2>
                         <ul class="detail-list">
                             <li>Live drone video streaming via RTMP/HLS pipeline</li>
                             <li>Real-time telemetry display (altitude, battery, GPS coordinates)</li>
@@ -75,7 +75,7 @@
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="user" class="lucide-icon-sm"></i> My Contribution</h2>
+                        <h2 class="detail-section-title">My Contribution</h2>
                         <p>
                             Designed and developed the video streaming architecture using MediaMTX, created the Android control application with DJI SDK, and built the Django management interface and REST endpoints.
                         </p>
@@ -124,28 +124,28 @@
             <div class="row g-5">
                 <div class="col-lg-8">
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="info" class="lucide-icon-sm"></i> Project Overview</h2>
+                        <h2 class="detail-section-title">Project Overview</h2>
                         <p>
                             DailyOpsTrack is an internal operational tracking application designed for businesses to log daily tasks, monitor project milestones, and generate summary reports for leadership and management.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="alert-circle" class="lucide-icon-sm"></i> Problem Addressed</h2>
+                        <h2 class="detail-section-title">Problem Addressed</h2>
                         <p>
                             Teams frequently struggle with fragmented progress updates across chat channels and disparate spreadsheets, creating blind spots in daily accountability and deliverables tracking.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="cpu" class="lucide-icon-sm"></i> How the System Works</h2>
+                        <h2 class="detail-section-title">How the System Works</h2>
                         <p>
                             The system is structured as an ASP.NET Core MVC application backed by SQL Server. Users authenticate, record task logs, update ticket progress, and attach milestone records. Reports are generated dynamically using relational aggregation queries.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="check-circle" class="lucide-icon-sm"></i> Main Features</h2>
+                        <h2 class="detail-section-title">Main Features</h2>
                         <ul class="detail-list">
                             <li>Role-based task management and milestone creation</li>
                             <li>Daily operational activity logging and audits</li>
@@ -155,7 +155,7 @@
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="user" class="lucide-icon-sm"></i> My Contribution</h2>
+                        <h2 class="detail-section-title">My Contribution</h2>
                         <p>
                             Implemented the database schema, developed core MVC controllers, built data access with Entity Framework Core, and styled the user interface with clean Bootstrap components.
                         </p>
@@ -203,28 +203,28 @@
             <div class="row g-5">
                 <div class="col-lg-8">
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="info" class="lucide-icon-sm"></i> Project Overview</h2>
+                        <h2 class="detail-section-title">Project Overview</h2>
                         <p>
                             ArtisanConnect is a web portal connecting certified artisans, trade workers, and contractors with clients requiring plumbing, electrical, carpentry, and building services.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="alert-circle" class="lucide-icon-sm"></i> Problem Addressed</h2>
+                        <h2 class="detail-section-title">Problem Addressed</h2>
                         <p>
                             Informal artisan markets lack centralized verification, dependable client reviews, and direct contact avenues, making it difficult for certified tradespeople to discover steady contract work.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="cpu" class="lucide-icon-sm"></i> How the System Works</h2>
+                        <h2 class="detail-section-title">How the System Works</h2>
                         <p>
                             Artisans register verified trade profiles showcasing certifications, past work, and coverage areas. Clients can browse categories, filter by local radius, submit booking inquiries, and leave verified ratings.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="check-circle" class="lucide-icon-sm"></i> Main Features</h2>
+                        <h2 class="detail-section-title">Main Features</h2>
                         <ul class="detail-list">
                             <li>Directory search with trade category and location filters</li>
                             <li>Artisan portfolio and verification badge displays</li>
@@ -234,7 +234,7 @@
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="user" class="lucide-icon-sm"></i> My Contribution</h2>
+                        <h2 class="detail-section-title">My Contribution</h2>
                         <p>
                             Developed ASP.NET Core views and models, created search and filtering algorithms, implemented artisan registration workflows, and optimized mobile-friendly UI views.
                         </p>
@@ -281,28 +281,28 @@
             <div class="row g-5">
                 <div class="col-lg-8">
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="info" class="lucide-icon-sm"></i> Project Overview</h2>
+                        <h2 class="detail-section-title">Project Overview</h2>
                         <p>
                             A corporate website developed for Thrive Development Group to establish their online presence, describe training and consulting services, and manage inquiry leads.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="alert-circle" class="lucide-icon-sm"></i> Problem Addressed</h2>
+                        <h2 class="detail-section-title">Problem Addressed</h2>
                         <p>
                             The organisation required a reliable, fast-loading, professional web platform to articulate their value proposition to institutional and business clients.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="cpu" class="lucide-icon-sm"></i> How the System Works</h2>
+                        <h2 class="detail-section-title">How the System Works</h2>
                         <p>
                             Constructed using modular Razor components and a clean ASP.NET Core backend. Integrates contact dispatch logic to direct prospective client submissions to administration teams.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="check-circle" class="lucide-icon-sm"></i> Main Features</h2>
+                        <h2 class="detail-section-title">Main Features</h2>
                         <ul class="detail-list">
                             <li>Responsive corporate layouts optimized for all device sizes</li>
                             <li>Interactive services showcase with program outlines</li>
@@ -312,7 +312,7 @@
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="user" class="lucide-icon-sm"></i> My Contribution</h2>
+                        <h2 class="detail-section-title">My Contribution</h2>
                         <p>
                             Structured the page layout, implemented the MVC architecture, styled the components, and deployed the application.
                         </p>
@@ -359,28 +359,28 @@
             <div class="row g-5">
                 <div class="col-lg-8">
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="info" class="lucide-icon-sm"></i> Project Overview</h2>
+                        <h2 class="detail-section-title">Project Overview</h2>
                         <p>
                             Imifuno is an agricultural marketplace connecting small-scale vegetable and crop farmers with commercial buyers, grocery stores, and local distributors.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="alert-circle" class="lucide-icon-sm"></i> Problem Addressed</h2>
+                        <h2 class="detail-section-title">Problem Addressed</h2>
                         <p>
                             Smallholder farmers often face barriers accessing formal markets, leading to crop waste and low price realization due to dependence on intermediaries.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="cpu" class="lucide-icon-sm"></i> How the System Works</h2>
+                        <h2 class="detail-section-title">How the System Works</h2>
                         <p>
                             The application uses Python and Flask with an SQL database. Farmers can list upcoming crop harvests with estimated dates and volumes, while commercial buyers place reserve orders directly.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="check-circle" class="lucide-icon-sm"></i> Main Features</h2>
+                        <h2 class="detail-section-title">Main Features</h2>
                         <ul class="detail-list">
                             <li>Produce inventory and harvest availability listings</li>
                             <li>Direct buyer-to-farmer order requests</li>
@@ -390,7 +390,7 @@
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="user" class="lucide-icon-sm"></i> My Contribution</h2>
+                        <h2 class="detail-section-title">My Contribution</h2>
                         <p>
                             Designed the relational database, developed the Flask application endpoints, built user authentication, and implemented the catalog interface.
                         </p>
@@ -437,28 +437,28 @@
             <div class="row g-5">
                 <div class="col-lg-8">
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="info" class="lucide-icon-sm"></i> Project Overview</h2>
+                        <h2 class="detail-section-title">Project Overview</h2>
                         <p>
                             A modern, clean software developer portfolio built on ASP.NET Core MVC, presenting skills, experience, project showcases, and a direct contact mechanism.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="alert-circle" class="lucide-icon-sm"></i> What This Solved</h2>
+                        <h2 class="detail-section-title">What This Solved</h2>
                         <p>
                             Provides a clean, accessible showcase of real software engineering projects and technical proficiencies, complete with responsive light-theme styling and detail documentation.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="cpu" class="lucide-icon-sm"></i> How the System Works</h2>
+                        <h2 class="detail-section-title">How the System Works</h2>
                         <p>
                             Powered by an ASP.NET Core 8.0 MVC architecture with Razor Views, CSS custom property theming, Lucide icon integration, and server-side email dispatch.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="check-circle" class="lucide-icon-sm"></i> Main Features</h2>
+                        <h2 class="detail-section-title">Main Features</h2>
                         <ul class="detail-list">
                             <li>Categorized skill cards in a responsive CSS grid</li>
                             <li>Reversed milestone development journey with scroll observer</li>
@@ -468,9 +468,9 @@
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="github" class="lucide-icon-sm"></i> Source Code</h2>
+                        <h2 class="detail-section-title">Source Code</h2>
                         <a href="https://github.com/Troy-moyo10/TroyPortfolio" target="_blank" rel="noopener noreferrer" class="btn-project-github">
-                            <i data-lucide="github" class="lucide-icon-sm"></i> View on GitHub
+                            <i data-lucide="github" class="lucide-icon-sm" aria-hidden="true"></i> View on GitHub
                         </a>
                     </div>
                 </div>
@@ -516,28 +516,28 @@
             <div class="row g-5">
                 <div class="col-lg-8">
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="info" class="lucide-icon-sm"></i> Project Overview</h2>
+                        <h2 class="detail-section-title">Project Overview</h2>
                         <p>
                             A healthcare management system that centralizes patient admissions, doctor appointments, ward assignments, and billing records into a unified database application.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="alert-circle" class="lucide-icon-sm"></i> Problem Addressed</h2>
+                        <h2 class="detail-section-title">Problem Addressed</h2>
                         <p>
                             Paper-based patient intake and disparate schedule records lead to administrative bottlenecks, record loss, and scheduling conflicts in healthcare facilities.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="cpu" class="lucide-icon-sm"></i> How the System Works</h2>
+                        <h2 class="detail-section-title">How the System Works</h2>
                         <p>
                             Built using C# and .NET with SQL Server database persistence. Features role access controls for receptionist intake, nursing ward tracking, doctor consultation logs, and pharmacy/billing checkout.
                         </p>
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="check-circle" class="lucide-icon-sm"></i> Main Features</h2>
+                        <h2 class="detail-section-title">Main Features</h2>
                         <ul class="detail-list">
                             <li>Patient record intake, history lookup, and admission tracking</li>
                             <li>Doctor scheduling and appointment booking</li>
@@ -547,7 +547,7 @@
                     </div>
 
                     <div class="detail-section">
-                        <h2 class="detail-section-title"><i data-lucide="user" class="lucide-icon-sm"></i> My Contribution</h2>
+                        <h2 class="detail-section-title">My Contribution</h2>
                         <p>
                             Created database schemas, authored entity relationship mappings, implemented business logic in C#, and designed user workflows for patient intake and appointment handling.
                         </p>
@@ -590,12 +590,3 @@
 
     </div>
 </section>
-
-@section Scripts {
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<script>
-    if (typeof lucide !== 'undefined') {
-        lucide.createIcons();
-    }
-</script>
-}
